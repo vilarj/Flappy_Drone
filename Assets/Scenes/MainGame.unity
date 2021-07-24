@@ -162,7 +162,6 @@ MonoBehaviour:
   position: 0
   speed: 400
   rb: {fileID: 0}
-  dead: 0
   score_update: {fileID: 1798717021}
 --- !u!65 &77801536
 BoxCollider:
@@ -478,7 +477,7 @@ Transform:
   m_GameObject: {fileID: 87506661}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 9.2, z: 0}
-  m_LocalScale: {x: 90, y: 90, z: 1}
+  m_LocalScale: {x: 112.2, y: 90, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1144,7 +1143,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138.84, y: 248}
+  m_AnchoredPosition: {x: 198.74, y: 248}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1798717021
@@ -6331,7 +6330,7 @@ PrefabInstance:
     - target: {fileID: 1569513436869914217, guid: c61c66a2659b3014db3175e20ee650a6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 138.84
+      value: 198.74
       objectReference: {fileID: 0}
     - target: {fileID: 1569513436869914217, guid: c61c66a2659b3014db3175e20ee650a6,
         type: 3}
