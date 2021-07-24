@@ -18,9 +18,11 @@ public class Spawner : MonoBehaviour
         newPipe.transform.position = transform.position + new Vector3(0, PipesHeight, 0);
         newBuilding.transform.position = transform.position + new Vector3(0, BuildingsHeight, 0);
     }
-    // Update is called once per frame
+
     void Update()
     {
+        IncreaseDifficulty();
+        
         if (timer > MaxTime) {
             GameObject newPipe = Instantiate(pipe);
             GameObject newBuilding = Instantiate(buildings);
@@ -38,10 +40,10 @@ public class Spawner : MonoBehaviour
 
     void IncreaseDifficulty () 
     {
-
-        if (PlayerController.score == 20) {Pipe.speed += 10.0f;}
-        if (PlayerController.score == 40) {Pipe.speed += 5.0f;}
-        if (PlayerController.score == 60) {Pipe.speed += 5.0f;}
-        if (PlayerController.score >= 80) {Pipe.speed += 8.0f;}
+        if (PlayerController.score >= 10 || PlayerController.score < 20) {Pipe.speed = 18.0f;}
+        if (PlayerController.score >= 20 || PlayerController.score < 40) {Pipe.speed = 20.0f;}
+        if (PlayerController.score >= 40 || PlayerController.score < 60) {Pipe.speed = 27.0f;}
+        if (PlayerController.score >= 60 || PlayerController.score < 80) {Pipe.speed = 29.0f;}
+        if (PlayerController.score >= 80) {Pipe.speed = 40.0f;}
     }
 }
